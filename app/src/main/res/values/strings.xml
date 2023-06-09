@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Switcher App</string>
+    <string name="division">DIVISION</string>
+    <string name="your_division_light_is">Your DIVISION light is</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="light">Light</string>
+    <string name="back">Back</string>
+
+</resources>
