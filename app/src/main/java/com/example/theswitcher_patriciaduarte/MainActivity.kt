@@ -7,10 +7,12 @@ import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * MainActivity
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView : RecyclerView
-    private lateinit var toolbar: Toolbar
     private lateinit var adapter: DivisionAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {

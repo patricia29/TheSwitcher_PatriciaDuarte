@@ -9,6 +9,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.appcompat.widget.Toolbar
+
+/**
+ * Class DivisionLightActivity
+ * Light on : Image and text ON
+ * Light off : Image and text OFF
+ */
 class DivisionLightActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_DIVISION = "extra_division"

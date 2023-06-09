@@ -7,6 +7,9 @@ import android.widget.TextView
 import androidx.appcompat.widget.SwitchCompat
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * Class related to recyclerView
+ */
 class DivisionAdapter(
     private val divisions: List<Division>,
     private val onItemClick: (Division) -> Unit
