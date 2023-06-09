@@ -9,17 +9,13 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SwitchCompat
 import androidx.appcompat.widget.Toolbar
-
 class DivisionLightActivity : AppCompatActivity() {
-
     companion object {
         const val EXTRA_DIVISION = "extra_division"
         const val EXTRA_DIVISION_NAME = "extra_division_name"
     }
-
     private lateinit var division: Division
     private lateinit var toolbar: Toolbar
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.division_light)
@@ -55,10 +51,15 @@ class DivisionLightActivity : AppCompatActivity() {
             )
         }
     }
-
+    fun onBackImageClick(view: View){
+        onBackPressed()
+    }
     private fun setToolbar(){
         toolbar = findViewById(R.id.toolbar_division)
         val frameLayout = findViewById<FrameLayout>(R.id.fl_back_image)
         frameLayout.visibility = View.VISIBLE
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
     }
 }
